@@ -1,7 +1,7 @@
-package ru.netology.sqr.square54.services;
+package ru.netology.sqr;
 
 public class SQRService {
-    public int calcSQR(int min, int max) {
+    public int calculate(int min, int max) {
 
         int result = 0;
         for (int i = 10; i <= 99; i++) {

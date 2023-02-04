@@ -1,11 +1,11 @@
 package ru.netology.sqr;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class SQRServiceTest {
+class SQRServiceTest {
 
     @Test
     public void SqrQtyCorrectCountTest() {
@@ -20,7 +20,6 @@ public class SQRServiceTest {
     @Test
     public void SqrQtyIncorrectCountTest() {
         SQRService service = new SQRService();
-
         int actual = service.calculate(0, 300);
         int expected = 3;
 
@@ -30,7 +29,6 @@ public class SQRServiceTest {
     @Test
     public void SqrQtyRangeErrorTest() {
         SQRService service = new SQRService();
-
         int actual = service.calculate(300, 200);
         int expected = 0;
 
